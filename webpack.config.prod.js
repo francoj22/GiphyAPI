@@ -9,8 +9,8 @@ export default {
     devtool: 'source-map',
     noInfo: false,
     entry: {
-        vendor: path.resolve(__dirname, 'src/vendor'),
-        main: path.resolve(__dirname, 'src/index')
+        vendor: path.resolve(__dirname, 'public/vendor'),
+        main: path.resolve(__dirname, 'public/index')
     },
     target: 'web',
     output: {
@@ -33,7 +33,7 @@ export default {
 
         // Create HTML file that includes reference to bundled JS.
         new HtmlWebpackPlugin({
-            template: 'src/index.html',
+            template: 'public/index.html',
             minify: {
                 removeComments: true,
                 collapseWhitespace: true,

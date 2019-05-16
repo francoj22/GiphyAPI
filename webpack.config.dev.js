@@ -7,18 +7,18 @@ export default {
     devtool: 'inline-source-map',
     noInfo: false,
     entry: [
-        path.resolve(__dirname, 'src/index')
+        path.resolve(__dirname, 'public/index')
     ],
     target: 'web',
     output: {
-        path: path.resolve(__dirname, 'src'),
+        path: path.resolve(__dirname, 'public'),
         publicPath: '/',
         filename: 'bundle.js'
     },
     plugins: [
         // Create HTML file that includes reference to bundled JS.
         new HtmlWebpackPlugin({
-            template: 'src/index.html',
+            template: 'public/index.html',
             inject: true
         }),
         new webpack.ProvidePlugin({
