@@ -1,7 +1,7 @@
 import express from 'express';
 import webpack from 'webpack';
 import config from '../webpack.config.dev';
-import start from '../app/startApp';
+import start from '../app/start';
 
 const port = 3030;
 const app = express();

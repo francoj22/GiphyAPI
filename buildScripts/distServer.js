@@ -1,6 +1,6 @@
 import express from 'express';
 import compression from 'compression';
-import start from '../app/startApp'
+import start from '../app/start'
 
 const port = 3040;
 const app = express();
