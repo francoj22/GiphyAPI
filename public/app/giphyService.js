@@ -13,7 +13,7 @@ const giphyService = function($http) {
 
     returnVal.addToFavourites = function(data) {
 
-        $http.post('/api/favourites', data).then(
+        $http.post('/app/favourites', data).then(
             function(success) {},
             function(fail) {
                 console.log(fail);
@@ -22,7 +22,7 @@ const giphyService = function($http) {
 
     returnVal.removeFromFavourites = function(data) {
 
-        $http.delete(`/api/favourites?id=${data.id}`).then(
+        $http.delete(`/app/favourites?id=${data.id}`).then(
             function(success) {},
             function(fail) {
                 console.log(fail);
@@ -34,7 +34,7 @@ const giphyService = function($http) {
 
     returnVal.getFavourites = function() {
 
-        return $http.get('/api/favourites');
+        return $http.get('/app/favourites');
     };
 
     return returnVal;
